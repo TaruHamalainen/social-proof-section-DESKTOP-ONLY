@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+:root {
+  --Very-Dark-Magenta: #502050;
+  --Soft-Pink: #ee68a4;
+  --Dark-Grayish-Magenta: rgb(147, 123, 146);
+  --Light-Grayish-Magenta: #f7f2f7;
+  --White: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+}
+.top-img {
+  width: 584px;
+  height: 362px;
+  background: url(images/bg-pattern-top-desktop.svg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bottom-img {
+  width: 1085px;
+  height: 773px;
+  background: url(images/bg-pattern-bottom-desktop.svg);
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.wrapper {
+  width: 1110px;
+  margin: 100px auto;
+  position: relative;
+}
+
+/*TOP PART*/
+.top-part {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  margin-bottom: 80px;
+}
+
+/*Top part text box*/
+.top-part-text-box {
+  grid-column: 1/3;
+  width: 445px;
+}
+.top-part-text-box h1 {
+  color: var(--Very-Dark-Magenta);
+  font-size: 56px;
+  margin-bottom: 30px;
+}
+.top-part-text-box p {
+  font-size: 19px;
+  color: #937b92;
+}
+/*Ratings*/
+.ratings-container {
+  width: 540px;
+}
+.ratings-box {
+  display: flex;
+  align-items: center;
+  background-color: rgba(147, 123, 146, 0.2);
+  padding: 8px 16px;
+  border-radius: 8px;
+  width: 445px;
+  margin-bottom: 20px;
+}
+.ratings-box:nth-of-type(1) {
+  margin-top: 30px;
+}
+.ratings-box:nth-of-type(2) {
+  margin-left: 50px;
+}
+.ratings-box:nth-of-type(3) {
+  margin-left: 100px;
+}
+.ratings-box p {
+  color: #502050;
+  font-weight: 700;
+  font-size: 17px;
+}
+.stars {
+  margin-right: 40px;
+}
+.stars img {
+  margin-left: 10px;
+}
+
+/*Bottom part*/
+.bottom-part {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+.card {
+  background-color: var(--Very-Dark-Magenta);
+  padding: 50px;
+  border-radius: 8px;
+  width: 350px;
+  height: 243px;
+}
+.card img {
+  border-radius: 50%;
+  width: 40px;
+  margin-right: 20px;
+}
+.card-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.name,
+.card blockquote {
+  color: var(--White);
+  font-size: 17px;
+}
+.verified {
+  color: var(--Soft-Pink);
+  font-size: 17px;
+}
+.card:nth-of-type(2) {
+  margin-top: 20px;
+}
+.card:nth-of-type(3) {
+  margin-top: 40px;
+}
